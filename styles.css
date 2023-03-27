@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 0px;
+}
+
+
+body {
+    margin: 0px;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+    background-image: url(./assets/images/cars.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh
+}
+
+nav {
+    padding: 25px 5px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #fff;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul a {
+    color: #fff
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 4px;
+}
+
+.hero-content .title {
+    font-weight: 300;
+}
+
+.btn {
+    padding: 15px;
+    width: 250px;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-block: 7px
+}
+
+.btn-colored {
+    border: none;
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+}
+
+.cards {
+    display: flex;
+    margin-block: 5px;
+    gap: 5px;
+}
+
+h2 {
+    font-weight:500 ;
+    text-transform: uppercase;
+}
+
+.card {
+    width: 50%;
+    height: 220px;
+    padding: 20px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card1 {
+    background-image: url(./assets/images/card1.jpeg);
+}
+
+.card2 {
+    background-image: url(./assets/images/card2.jpeg);
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100vh;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+}
+
+.chat-icon {
+    width: 40px;
+    fill: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul li {
+        border: 1px solid grey;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 248)
+    }
+}
