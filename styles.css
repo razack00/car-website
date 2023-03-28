@@ -26,19 +26,28 @@ header {
 }
 
 nav {
-    padding: 25px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 5px;
     background-color: transparent;
-    position: sticky;
-    top: 0;
-    width: 80%;
-    margin: auto;
     border-bottom: 1px solid #fff;
+    margin-inline: 25px;
+    background-color: red
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black
 }
 
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 }
 
 ul a {
