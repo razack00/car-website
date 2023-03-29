@@ -56,6 +56,10 @@ body {
     color: var(--text-color);
 }
 
+.container {
+    margin: 10rem auto;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -205,7 +209,7 @@ header {
     display: grid;
     grid-template-columns: 2fr repeat(3, 23rem) 10rem;
     gap: .5rem;
-    margin-block: 2rem 10rem
+    margin-top: 2rem 
 }
 
 .get-started div:first-of-type {
@@ -258,6 +262,10 @@ select {
     
 } */
 
+.bmw-shop-container {
+    width: 65%;
+}
+
 .shop-nav {
     padding-block: 3rem;
     border-bottom: 1px solid var(--border-color);
@@ -271,11 +279,6 @@ select {
 .tertiary-nav {
     justify-content: space-between;
     margin-bottom: 5px;
-}
-
-.bmw-shop-container {
-    width: 65%;
-    margin: auto;
 }
 
 .shop-cards-container {
@@ -352,6 +355,18 @@ select {
     padding: 2.5px 6px;
     font-size: 1rem;
     color: var(--black);
+}
+
+.blogpost-card-container {
+    width:70%;
+}
+
+.blog-card {
+
+}
+
+.blog-card img {
+    width: 100%;
 }
 
 /* .card-content p {
