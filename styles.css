@@ -2,7 +2,7 @@
     --black: #262626;
     --blue:#1C69D4;
     --hover-blue:#0653B6;
-    --border-color: rgba(228, 227, 227, 0.7);
+    --border-color: rgba(212, 212, 212, 0.7);
     --dark-gray: #262626;
     --grey: #3a3a3a;
     --light-grey: rgb(214, 211, 211);
@@ -96,7 +96,7 @@ header {
     padding-inline:4.3rem;
 }
 
-nav {
+.primary-nav {
     justify-content: space-between;
     background-color: transparent;
 }
@@ -108,16 +108,16 @@ nav {
     padding: 3.8rem .5rem;
 }
 
-ul {
+.primary-nav ul {
     justify-content: space-between;
 }
 
-nav ul li a {
+.primary-nav ul li a {
     color:var(--hero-text-color);
     padding: 3.4rem 1.8rem;
 }
 
-nav ul li a:hover {
+.primary-nav ul li a:hover {
     border-bottom: 4px solid var(--blue);
 }
 
@@ -205,7 +205,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 2fr repeat(3, 23rem) 10rem;
     gap: .5rem;
-    margin-block: 2rem 15rem
+    margin-block: 2rem 11rem
 }
 
 .get-started div:first-of-type {
@@ -252,6 +252,23 @@ select {
 
 .get-started i {
     font-size: 2.5rem;
+}
+
+
+.bmw-shop {
+    width: 65%;
+    margin: auto
+}
+
+.shop-nav {
+    gap: 4rem;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tertiary-nav {
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px) {
