@@ -280,6 +280,10 @@ select {
     color: var(--grey);
 }
 
+.active{
+    border-bottom: 4px solid var(--blue)
+}
+
 .tertiary-nav {
     justify-content: space-between;
     margin-bottom: 5px;
