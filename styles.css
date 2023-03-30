@@ -13,18 +13,22 @@
     --text-color: var(--black);
     --hero-text-color: #fff;
     --gradient: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
-
+    
+    
+    --primary-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     /* pc font sizes */
     --title-fs:4.8rem;
     --fw-light :300;
     --subtitle-fs: 2.4rem;
     --text-fs: 1.6rem;
-    --text-fw: 300;
-    --btn-fw: 700;
+    --footer-title: 2rem;
+    
     --icon-fs: 1.8rem;
     --icon-fw: 400;
-    --primary-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    --btn-fw: 700;
+    --text-fw: 300;
+    
     /* mobile font sizes */
     --title-mb-fs: 2.3rem;
     --title-mb-fw: 700;
@@ -418,6 +422,8 @@ select {
     background-color: var(--lightest-grey);
     border-top: .6rem solid var(--border-hover-color)
 }
+
+
 
 
 /* .card-content p {
