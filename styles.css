@@ -423,6 +423,23 @@ select {
     border-top: .6rem solid var(--border-hover-color)
 }
 
+.footer-social-icons {
+    background-color: var(--lightest-grey);
+    padding-block: 6rem;
+    color: red;
+}
+
+.social-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-title {
+    font-size: var(--footer-title);
+    font-weight: var(--text-fw);
+}
+
 
 
 
