@@ -8,7 +8,8 @@
     --light-grey: rgb(214, 211, 211);
     --lightest-grey: rgba(223, 219, 219, 0.7);
     --white: #fff;
-
+    
+    --border-hover-color:var(--blue);
     --text-color: var(--black);
     --hero-text-color: #fff;
     --gradient: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
@@ -123,7 +124,7 @@ header {
 }
 
 .primary-nav ul li a:hover {
-    border-bottom: 4px solid var(--blue);
+    border-bottom: 4px solid var(--border-hover-color);
 }
 
 .nav-icons-links a {
@@ -230,7 +231,7 @@ select {
     border: 1px solid var(--black);
     min-height: 5rem;
     width: 100%;
-    padding: 5px
+    padding: .5rem
 }
 
 .get-started>div {
@@ -249,13 +250,13 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--black);
+    border:.1rem solid var(--black);
     min-height: 5rem;
     width: 100%;
 }
 
 .get-started div a:hover {
-    border: 2px solid var(--black);
+    border:.2rem solid var(--black);
 }
 
 .get-started i {
@@ -272,7 +273,7 @@ select {
 
 .shop-nav {
     padding-block: 3rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: .1rem solid var(--border-color);
 }
 
 .shop-nav a {
@@ -281,12 +282,12 @@ select {
 }
 
 .active{
-    border-bottom: 4px solid var(--blue)
+    border-bottom: .4rem solid var(--border-hover-color)
 }
 
 .tertiary-nav {
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 
 .shop-cards-container {
@@ -339,7 +340,7 @@ select {
 .card-link {
     font-size: 1.4rem;
     color: grey;
-    padding-right: 5px;
+    padding-right: .5rem;
 }
 
 .card-content h2 {
@@ -355,9 +356,9 @@ select {
 }
 
 .card-content .info {
-    border: 1px solid var(--black);
+    border:.1rem solid var(--black);
     border-radius:100%;
-    padding: 2.5px 6px;
+    padding: .2rem .6rem;
     font-size: 1rem;
     color: var(--black);
 }
@@ -370,11 +371,11 @@ select {
 }
 
 .blog-card {
-    border: 1px solid var(--light-grey);
+    border: .1rem solid var(--light-grey);
     min-height: 78vh;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 1.5rem;
     cursor: pointer;
 }
 
@@ -387,6 +388,37 @@ select {
 .blog-card img {
     width: 100%;
 }
+
+.sticky-nav-section {
+    border-top: .2rem solid var(--lightest-grey);
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-section ul{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sticky-nav-section ul li a {
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-section ul li span {
+    font-size: 1.2rem;
+    font-weight: var(--btn-fw)
+}
+
+.sticky-nav-section ul li a:hover {
+    background-color: var(--lightest-grey);
+    border-top: .6rem solid var(--border-hover-color)
+}
+
 
 /* .card-content p {
     gap: 5px;
