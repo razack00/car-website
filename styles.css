@@ -62,7 +62,7 @@ body {
 
 .flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .title {
@@ -103,6 +103,7 @@ header {
 .primary-nav {
     justify-content: space-between;
     background-color: transparent;
+    align-items: center;
 }
 
 .nav-links-container {
@@ -137,7 +138,6 @@ header {
 
 .hero-content {
     flex-direction: column;
-    align-items: flex-start;
     width: 80%;
     padding: 25px;
     gap: 1rem;
@@ -175,21 +175,25 @@ header {
 
 .card {
     width: 50%;
-    height: 22rem;
-    padding: 3.5rem;
+    height: 28rem;
+    padding: 3rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: var(--white);
 }
 
-.card h2 {
+.card-subtitle {
     font-size: 3.4rem !important;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: var(--text-fw) !important;
 }
 
 
 .message {
     justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 4rem;
     right: 3rem;
@@ -288,7 +292,6 @@ select {
 
 .card-image-container {
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     position: relative;
     padding-block: 1.5rem
@@ -327,11 +330,9 @@ select {
 
 .card-content {
     flex-direction: column;
-    align-items: flex-start;
     font-size: 2rem;
 }
-
-.card-content i {
+.card-link {
     font-size: 1.4rem;
     color: grey;
     padding-right: 5px;
@@ -359,10 +360,24 @@ select {
 
 .blogpost-card-container {
     width:70%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 9rem 2.5rem
 }
 
 .blog-card {
+    border: 1px solid var(--light-grey);
+    min-height: 78vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+}
 
+.blog-card1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-height: 62vh;
 }
 
 .blog-card img {
