@@ -477,6 +477,24 @@ select {
     color: var(--black);
 }
 
+.copyright-section {
+    justify-content: space-between;
+    padding: 3rem 5rem 17rem 5rem;
+    color: var(--black);
+}
+
+.copyright-nav{
+    gap:2rem;
+}
+
+.copyright-nav a{
+    color: var(--blue)
+}
+
+.copyright-nav a:hover{
+    color: var(--black)
+}
+
 
 
 
