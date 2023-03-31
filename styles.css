@@ -14,8 +14,7 @@
     --hero-text-color: #fff;
     --gradient: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
     
-    
-    --primary-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-font: Arial, Helvetica, sans-serif;
     
     /* pc font sizes */
     --title-fs:4.8rem;
@@ -27,7 +26,7 @@
     --icon-fs: 1.8rem;
     --icon-fw: 400;
     --btn-fw: 700;
-    --text-fw: 300;
+    --text-fw: 100;
     
     /* mobile font sizes */
     --title-mb-fs: 2.3rem;
@@ -47,8 +46,9 @@ html {
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--primary-font);
     border: none;
+    font-size: 1.6rem;
     border-radius: 0px;
     font-weight: var(--text-fw);
 }
@@ -143,9 +143,13 @@ header {
 
 .hero-content {
     flex-direction: column;
-    width: 80%;
+    width: 96.1%;
     padding: 25px;
     gap: 1rem;
+}
+
+.hero-moto {
+    align-self: flex-end !important;
 }
 
 .btn {
@@ -398,6 +402,9 @@ select {
     border-top: .2rem solid var(--lightest-grey);
     justify-content: center;
     align-items: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff
 }
 
 .sticky-nav-section ul{
