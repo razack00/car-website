@@ -344,9 +344,14 @@ select {
 
 .card-content {
     flex-direction: column;
+    gap: .7rem;
     font-size: 2rem;
 }
-.card-link {
+
+.price-wrapper {
+    padding-block: .5rem;
+}
+.card-angle-bracket {
     font-size: 1.4rem;
     color: grey;
     padding-right: .5rem;
