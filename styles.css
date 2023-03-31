@@ -1,5 +1,5 @@
 :root {
-    --black: #262626;
+    --black: #000;
     --blue:#1C69D4;
     --hover-blue:#0653B6;
     --border-color: rgba(212, 212, 212, 0.7);
@@ -10,7 +10,7 @@
     --white: #fff;
     
     --border-hover-color:var(--blue);
-    --text-color: var(--black);
+    --text-color: var(--dark-gray);
     --hero-text-color: #fff;
     --gradient: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
     
@@ -22,7 +22,7 @@
     --fw-light :300;
     --subtitle-fs: 2.4rem;
     --text-fs: 1.6rem;
-    --footer-title: 2rem;
+    --footer-nav-title: 2rem;
     
     --icon-fs: 1.8rem;
     --icon-fw: 400;
@@ -232,7 +232,7 @@ form {
 }
 
 select {
-    border: 1px solid var(--black);
+    border: 1px solid var(--dark-gray);
     min-height: 5rem;
     width: 100%;
     padding: .5rem
@@ -254,13 +254,13 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    border:.1rem solid var(--black);
+    border:.1rem solid var(--dark-gray);
     min-height: 5rem;
     width: 100%;
 }
 
 .get-started div a:hover {
-    border:.2rem solid var(--black);
+    border:.2rem solid var(--dark-gray);
 }
 
 .get-started i {
@@ -361,11 +361,11 @@ select {
 }
 
 .card-content .info {
-    border:.1rem solid var(--black);
+    border:.1rem solid var(--dark-gray);
     border-radius:100%;
     padding: .2rem .6rem;
     font-size: 1rem;
-    color: var(--black);
+    color: var(--dark-gray);
 }
 
 .blogpost-card-container {
@@ -428,7 +428,7 @@ select {
 .footer-section {
     background-color: var(--lightest-grey);
     margin-bottom: 9rem;
-    padding: 1rem
+    padding-inline: 3rem
 }
 
 .footer-icons-container {
@@ -439,22 +439,22 @@ select {
 }
 
 .social-icons {
-    gap: 1.5rem;
-    margin: 2rem 5rem 0rem 0rem;
+    gap: 1rem;
+    margin-right: 5rem;
 }
 
+.social-title {
+    font-size: var(--footer-nav-title);
+    font-weight: 400;
+    color: #000;
+    padding: 1.5rem;
+}
 
 .social-icons i {
     font-size: 2.7rem;
     color: var(--grey);
-    padding: 1rem;
+    padding: 1.5rem;
 }
-
-.footer-title {
-    font-size: var(--footer-title);
-    font-weight: var(--text-fw);
-}
-
 
 
 
